@@ -1,0 +1,13 @@
+query Testing{
+    books {
+        title
+        author
+        ... on Textbook {
+            courses
+        }
+
+        ... on ColoringBook {
+            colors
+        }
+    }
+}
